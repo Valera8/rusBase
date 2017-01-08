@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма</title>
+</head>
+<body>
+<form action="index.php" method="post">
+    <fieldset>
+        <legend>Товары</legend>
+            Название товара:
+             <input type="text" name="product_name"><br>
+            Краткое описание товара:
+            <input type="text" name="product_description"><br>
+            Полное описание товара:
+            <input type="text" name="full_description"><br>
+            <input type="submit" name="product" value="Отправить данные">
+    </fieldset>
+    <fieldset>
+        <legend>Заказы</legend>
+        Имя заказчика:
+        <input type="text" name="client"><br>
+        email заказчика:
+        <input type="email" name="email"><br>
+        Комментарии:
+        <input type="text" name="comment"><br>
+        <input type="submit" name="ordering" value="Отправить данные">
+    </fieldset>
+</form>
+</body>
+</html>
+на странице сделайте название товаров в виде ссылки с get-параметром если передан get-параметр product
